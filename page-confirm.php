@@ -126,7 +126,7 @@ line-height: 26px;}
     <script>
 	function payWithPaystack(){
 		var handler = PaystackPop.setup({
-			key: 'pk_live_ee75abf1aa1441aad270734e10dc0cf428c0fb90',
+			key: 'pk_live_ee75abf1aa1441aad270734e10dc0cf428c0fb9',
 			email: '<?php echo $email; ?>',
 			amount: ' <?php echo $amount; ?>',
 			ref: '<?php echo $payment_ref; ?>',
