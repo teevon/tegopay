@@ -1,0 +1,228 @@
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+body{
+	width:100%;
+	height:100%;
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	color:#333333;
+	padding-top: 50px;
+	background-color:#f4f4f4;
+
+}
+
+h1, h2, h3, h4, h6{
+	margin: 0 0 35px;
+	text-transform:uppercase;
+	font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+	letter-spacing:1px;
+}
+
+.background-white {
+	padding: 30px;
+}
+
+.packages .package {
+    background: #fff;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    text-align: center;
+    border: solid 1px #38a7bb;
+    overflow: hidden;
+    text-align: center;
+}
+
+.packages h2 {
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-weight: 900;
+    line-height: 1.1;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.packages .package .package-header h5 {
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 57px;
+  margin: 0;
+  letter-spacing: 0.08em;
+}
+
+.packages .package .package-header {
+  height: 57px;
+  color: #000;
+  line-height: 57px;
+  background: #38a7bb;
+}
+
+.packages .package .package-header.light-gray {
+    background: #eeeeee;
+}
+
+#packages {
+	background: #D20502;
+	padding: 30px;
+	background: linear-gradient(rgba(210,5,2,0.85), rgba(0, 0, 0, 0.35)), rgba(0,0,0,0.35) url(../images/web2.jpg) no-repeat center center scroll;
+	//background: url(../images/red.jpg);
+
+}
+
+.packages .package ul li {
+    list-style-type: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    margin: auto;
+    border-bottom: 1px dotted #ccc;
+    margin-left: -20px;
+
+}
+
+.packages .package ul li i {
+    font-size: 13px;
+    margin-right: 5px;
+}
+
+.packages .package .price {
+  line-height: 60px;
+  height: 60px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.intro{
+	display:table;
+	width:99%;
+	height:300px;
+	padding:100px;
+	text-align:center;
+	color:#f4f4f4;
+	background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), rgba(0, 0, 0, 0.35) url(../images/web-banner2.jpg) no-repeat center center scroll;
+	background-color:#333333;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+}
+
+.topz{
+	padding:100px;
+	text-align:center;
+	color:#f4f4f4;
+	background: linear-gradient(rgba(210,5,2,0.85), rgba(0, 0, 0, 0.35)), rgba(0,0,0,0.35) url(../images/web-banner2.jpg) no-repeat center center scroll;
+	background-color:#333333;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+}
+
+.testimony {
+	display:table;
+	border-top: 1px solid #cccccc;
+	width:100%;
+	padding:50px;
+	text-align:center;
+	margin-left: 0px;
+	color:#333;
+	background-color: #F7F7F9;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+}
+
+.intro2{
+	display:table;
+	width:100%;
+	height:300px;
+	padding:50px;
+	text-align:center;
+	color:#333333;
+	//background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), rgba(0,0,0,0.65) url(../images/lekki-Ikoyi-web1.jpg) no-repeat top center scroll;
+	background-color:#f4f4f4;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+}
+
+.intro3{
+	display:table;
+	width:100%;
+	height:180px;
+	padding:40px;
+	text-align:center;
+	color:#f4f4f4;
+	background: linear-gradient(rgba(210,5,2,0.85), rgba(0, 0, 0, 0.35)), rgba(0,0,0,0.35) url(../images/web4.jpg) no-repeat center center scroll;
+	background-color:#333333;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+}
+
+.form-signin {
+  max-width: 530px;
+  padding: 15px;
+  margin: 0 auto;
+  min-height: 400px;
+}
+
+.intro4{
+	display:table;
+	width:100%;
+	height:200px;
+	padding:40px;
+	padding-top:10px;
+	text-align:center;
+	color:#333333;
+	background: #ffffff;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+}
+
+.box-simple {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.box-simple h3 {
+    font-weight: normal;
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 1.5;
+    color: #555555;
+    letter-spacing: 0.08em;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.intro-body{
+	display:table-cell;
+	vertical-align:middle;
+}
+
+.brand-heading{
+	font-size:45px;
+	font-weight: 800;
+}
+
+.intro-text{
+	font-size:18px;
+}
+
+footer{
+	margin-top:0px;
+	padding:40px;
+	height: auto;
+	color: #ffffff;
+	text-align:center;
+	background: #000000;
+}
