@@ -67,13 +67,13 @@ line-height: 26px;}
             <li role="presentation"><a href="#">Contact</a></li>
           </ul>
         </nav>
-        <h3 class="text-muted">Webplay Nigeria Ltd</h3>
+        <h3 class="text-muted"></h3>
       </div> -->
 
       <div class="jumbotron">
         <div class="row">
           <div class="col-md-4">
-        <img border="0" src="images/webplay1.png" width="195" height="73"></div>
+        <img border="0" src="images/tegopay.jpg" width="195" height="73"></div>
         <div class="col-md-8 ref"><p class="head"><font color="#333333"><b>Payment Ref: <?php echo $payment_ref; ?></b></font></p><br><b>Payment Date:</b> <?php echo date("D, F j, Y, g:i a"); ?></div>
       </div><hr>
         <!-- <h2>Online Payments</h1> -->
@@ -116,7 +116,7 @@ line-height: 26px;}
 
 
       <footer class="footer">
-        <p>&copy; 2012 - <?php echo date("Y"); ?> Webplay Nig Ltd. All Rights Reserved.</p>
+        <p>tegopay</p>
       </footer>
 
     </div> <!-- /container -->
