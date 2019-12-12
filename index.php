@@ -38,7 +38,7 @@ line-height: 26px;}
       <div class="jumbotron">
         <div class="row">
           <div class="col-md-4">
-        <img border="0" src="images/tegopay.jpg" width="195" height="73"></div>
+        <img border="0" src="images/tegopay.png" width="73" height="73"></div>
         <div class="col-md-8 ref"><p class="head"><font color="#333333"><b>Payment Ref: <?php $trans_code = rand().rand(); echo $trans_code; ?></b></font></p><br><b>Payment Date:</b> <?php echo date("D, F j, Y, g:i a"); ?></div>
       </div><hr>
         <!-- <h2>Online Payments</h1> -->
