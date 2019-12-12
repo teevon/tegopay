@@ -79,7 +79,7 @@ line-height: 26px;}
                 </div>
               </div><br>
                 <div class="form-group center-block">
-                <button type="submit" class="btn btn-success" name="B1">Continue &raquo;</button> <input type="reset" class="btn btn-success">
+                <button type="submit" class="btn btn-primary" name="B1">Continue &raquo;</button> <input type="reset" class="btn btn-danger">
                 </div>
               </form>
         <!-- <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p> -->

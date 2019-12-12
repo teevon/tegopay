@@ -13,7 +13,7 @@ curl_setopt($ch, CURLOPT_URL, $url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt(
   $ch, CURLOPT_HTTPHEADER, [
-    'Authorization: Bearer sk_live_c9be906a7ebb974d103aafcc631c717b0d4b5371']
+    'Authorization: Bearer sk_test_c6fe0f879e3867b1d20a9357d87211007e2c4ea9']
 );
 $request = curl_exec($ch);
 curl_close($ch);

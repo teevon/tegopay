@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	$payment_ref = test_input($_POST['payment_ref']);
 	$service = test_input($_POST['service']);
         $trans_date = date("D, F j, Y, g:i a");
-        $query = "INSERT INTO web_payments(customer_name,customer_id,trans_ref,trans_date,trans_amount) VALUES ('$name','$email','$payment_ref','$trans_date','$amount')";
+        $query = "INSERT INTO online_payments(customer_name,customer_id,trans_ref,trans_date,trans_amount) VALUES ('$name','$email','$payment_ref','$trans_date','$amount')";
 if (!mysql_query($query))
 {
   header("Location: pay_error.php?msg='Database currently unavailable. Please try again later '&payment_ref=" . urlencode($payment_ref));
@@ -37,7 +37,7 @@ $url_pay_err = 'pay_error.php?msg=window-closed&payment_ref='. urlencode($paymen
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
 
-    <title>Webplay Payment Page</title>
+    <title>Tegopay Payment Page</title>
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet"> 
     <link href="css/narrow.css" rel="stylesheet">
@@ -53,17 +53,6 @@ line-height: 26px;}
   <body>
 
     <div class="container">
-      <!-- <div class="header clearfix">
-        <nav>
-          <ul class="nav nav-pills pull-right">
-            <li role="presentation" class="active"><a href="#">Home</a></li>
-            <li role="presentation"><a href="#">About</a></li>
-            <li role="presentation"><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-        <h3 class="text-muted">Webplay Nigeria Ltd</h3>
-      </div> -->
-
       <div class="jumbotron">
         <div class="row">
           <div class="col-md-4">
@@ -114,7 +103,7 @@ line-height: 26px;}
 
 
       <footer class="footer">
-        <p>&copy; 2012 - <?php echo date("Y"); ?> Webplay Nig Ltd. All Rights Reserved.</p>
+        <p></p>
       </footer>
 
     </div> <!-- /container -->
@@ -125,7 +114,7 @@ line-height: 26px;}
     <script>
 	function payWithPaystack(){
 		var handler = PaystackPop.setup({
-			key: 'pk_live_ee75abf1aa1441aad270734e10dc0cf428c0fb90',
+			key: 'pk_test_acedf4103ce109ffc0d05ab0f3cfd44767a3e5fb',
 			email: '<?php echo $email; ?>',
 			amount: ' <?php echo $amount; ?>',
 			ref: '<?php echo $payment_ref; ?>',
