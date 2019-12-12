@@ -14,7 +14,7 @@
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
 
-    <title>Webplay Payment Page</title>
+    <title>Tegopay Payment Page</title>
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet"> 
     <link href="css/narrow.css" rel="stylesheet">
@@ -44,7 +44,7 @@ line-height: 26px;}
       <div class="jumbotron">
         <div class="row">
           <div class="col-md-4">
-        <img border="0" src="images/webplay1.png" width="195" height="73"></div>
+        <img border="0" src="images/tegopay.png" width="73" height="73"></div>
         <div class="col-md-8 ref"><p class="head"><font color="#333333"><b>Payment Ref: <?php echo $payment_ref; ?></b></font></p><b>Payment Date:</b> <?php echo date("D, F j, Y, g:i a"); ?></div>
       </div><hr>
         <!-- <h2>Online Payments</h1> -->
@@ -93,7 +93,7 @@ line-height: 26px;}
 
 
       <footer class="footer">
-        <p>&copy; 2012 - <?php echo date("Y"); ?> Webplay Nig Ltd. All Rights Reserved.</p>
+        <p></p>
       </footer>
 
     </div> <!-- /container -->

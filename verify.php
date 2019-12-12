@@ -35,7 +35,7 @@ $result_data_gateway_response = $result[data][gateway_response];
 //echo $result_message;
 
 
-$sql_upd = mysql_query("UPDATE web_payments SET trans_response = '$result_data_gateway_response' , 
+$sql_upd = mysql_query("UPDATE online_payments SET trans_response = '$result_data_gateway_response' , 
 trans_status = '$result_data_status',
 ps_message = '$result_message', 
 ps_status = '$result_status', 
@@ -60,7 +60,7 @@ ps_data_gateway_response = '$result_data_gateway_response'
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
 
-	<title>Webplay Verification Page</title>
+	<title>Tegopay Verification Page</title>
 	<link href="css/bootstrap.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet"> 
     <link href="css/narrow.css" rel="stylesheet">
@@ -115,7 +115,7 @@ line-height: 26px;}
 	</div>
 
 	<footer class="footer">
-        <p>&copy; 2012 - <?php echo date("Y"); ?> Webplay Nig Ltd. All Rights Reserved.</p>
+        <p></p>
     </footer>
 </div>
 
