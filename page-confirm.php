@@ -1,5 +1,5 @@
 <?php
-include "paystacks/connect.php";
+include "connect.php";
 
 function test_input($data) {
   $data = trim($data);
