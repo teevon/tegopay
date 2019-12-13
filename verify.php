@@ -1,13 +1,8 @@
 <?php
-
 include 'connect.php';
 $payment_ref = $_GET['payment_ref']; 
-
 $result = array();
-
-//The parameter after verify/ is the transaction reference to be verified
 $url = 'https://api.paystack.co/transaction/verify/'.$payment_ref;
-
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
@@ -35,7 +30,7 @@ $result_data_gateway_response = $result[data][gateway_response];
 //echo $result_message;
 
 
-$sql_upd = mysql_query("UPDATE online_payments SET trans_response = '$result_data_gateway_response' , 
+$sql_upd = "UPDATE online_payments SET trans_response = '$result_data_gateway_response' , 
 trans_status = '$result_data_status',
 ps_message = '$result_message', 
 ps_status = '$result_status', 
@@ -45,7 +40,8 @@ ps_data_transaction_date = '$result_data_transaction_date',
 ps_data_status = '$result_data_status', 
 ps_data_reference = '$result_data_reference', 
 ps_data_gateway_response = '$result_data_gateway_response'
- WHERE trans_ref = '$payment_ref'") or die(mysql_error());
+ WHERE trans_ref = '$payment_ref'";
+ $update_txn_result = mysqli_query($dbConn, $sql_upd);
 ?>
 
 
