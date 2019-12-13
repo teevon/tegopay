@@ -18,6 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	$service = test_input($_POST['service']);
         $trans_date = date("D, F j, Y, g:i a");
         $query = "INSERT INTO online_payments(customer_name,customer_id,trans_ref,trans_date,trans_amount) VALUES ('$name','$email','$payment_ref','$trans_date','$amount')";
+        var_dump($dbConn);
 // if (!mysqli_query($dbConn, $query))
 // {
 //   header("Location: pay_error.php?msg='Database currently unavailable. Please try again later '&payment_ref=" . urlencode($payment_ref));
