@@ -1,13 +1,11 @@
 <?php
 include "connect.php";
-
 function test_input($data) {
 	$data = trim($data);
 	$data = stripslashes($data);
 	$data = htmlspecialchars($data);
 	return $data;
 }
-
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	$name = test_input($_POST['name']);
 	$email = test_input($_POST['email']);
@@ -20,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $query = "INSERT INTO online_payments(customer_name,customer_id,trans_ref,trans_date,trans_amount) VALUES ('$name','$email','$payment_ref','$trans_date','$amount')";
 if (!mysqli_query($dbConn, $query))
 {
-  // header("Location: pay_error.php?msg='Database currently unavailable. Please try again later '&payment_ref=" . urlencode($payment_ref));
+  header("Location: pay_error.php?msg='Database currently unavailable. Please try again later '&payment_ref=" . urlencode($payment_ref));
   }
 
 }

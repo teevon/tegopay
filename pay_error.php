@@ -1,7 +1,6 @@
 <?php 
  include "connect.php"; 
  $payment_ref = $_GET['payment_ref'];
-
 ?>
 
 <!DOCTYPE html>
@@ -71,10 +70,10 @@ line-height: 26px;}
                     <label for="inputEmail3">Select Service For which you are making payment </label>
                       <select name="service" class="form-control" required>
                       <option value="">Select ... </option>
-                        <option value="web-design" >Web Design Services</option>
-                        <option value="web-hosting" >Web Hosting Services</option>
-                        <option value="Email" >Corporate Email Renewals</option>
-                        <option value="travelnow" >TravelNow Flight Reservation Services</option>
+                        <option value="web-design" >Web App Development</option>
+                        <option value="web-hosting" >Mobile App Development</option>
+                        <option value="Email" >Desktop App Development</option>
+                        <option value="travelnow" >Multi Platform App Development</option>
                           </select>
                   </div>
                 <div class="form-group">
